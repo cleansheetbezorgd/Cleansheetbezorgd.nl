@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta name="description" content="Cleansheet Bezorgd - Maak je clean sheet nog waardevoller.">
+<meta name="keywords" content="clean sheet, voetbal, amateurkeepers, prestaties, Tikkie">
+<meta name="author" content="Cleansheet Bezorgd">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacybeleid</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="PrivacyPolicy.html">Privacybeleid</a></li>
+        <li><a href="Terms.html">Algemene Voorwaarden</a></li>
+        <li><a href="Testimonials.html">Testimonials</a></li>
+        <li><a href="Blog.html">Blog</a></li>
+    </ul>
+</nav>
+<main>
+    <h1>Privacybeleid</h1><p>Wij respecteren uw privacy en beschermen uw gegevens.</p>
+</main>
+<footer>
+    <p>© 2025 Cleansheet Bezorgd</p>
+</footer>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        if (!document.cookie.includes('acceptedCookies=true')) {
+            const cookieBanner = document.createElement('div');
+            cookieBanner.style.position = 'fixed';
+            cookieBanner.style.bottom = '0';
+            cookieBanner.style.width = '100%';
+            cookieBanner.style.background = '#333';
+            cookieBanner.style.color = 'white';
+            cookieBanner.style.textAlign = 'center';
+            cookieBanner.style.padding = '1rem';
+            cookieBanner.innerHTML = `
+                <p>We gebruiken cookies om uw ervaring te verbeteren. <button id="acceptCookies" style="color: #007bff; background: none; border: none; cursor: pointer;">Accepteer</button></p>
+            `;
+            document.body.appendChild(cookieBanner);
+
+            document.getElementById('acceptCookies').addEventListener('click', () => {
+                document.cookie = "acceptedCookies=true; path=/";
+                document.body.removeChild(cookieBanner);
+            });
+        }
+    });
+</script>
+
+</body>
+</html>
